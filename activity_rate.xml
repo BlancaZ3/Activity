@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical"
+    tools:context=".MoneyActivity">
+
+    <EditText
+        android:id="@+id/inputmon"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:ems="10"
+        android:hint="Input RMB"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/monchange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Hello"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <Button
+        android:id="@+id/btu_dollar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="moneybtu"
+        android:text="DOLLAR" />
+
+    <Button
+        android:id="@+id/btu_euro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="moneybtu"
+        android:text="EURO"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btu_won"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="moneybtu"
+        android:text="WON" />
+
+    <Button
+        android:id="@+id/config"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="configbtu"
+        android:text="CONFIG" />
+</LinearLayout>
+

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/teamA_add1_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+3point"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/teamA_add3_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+2points"
+        android:layout_below="@id/teamA_add1_button"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/teamA_add5_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1points"
+        android:layout_below="@id/teamA_add3_button"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/teamA_score_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teamA_add5_button"
+        android:layout_marginTop="55dp"
+        android:text="Team A Score: 0" />
+
+    <Button
+        android:id="@+id/teamB_add1_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:text="+3point" />
+
+    <Button
+        android:id="@+id/teamB_add3_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teamB_add1_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="0dp"
+        android:text="+2points" />
+
+    <Button
+        android:id="@+id/teamB_add5_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teamB_add3_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="-1dp"
+        android:text="+1points" />
+
+    <TextView
+        android:id="@+id/teamB_score_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/teamB_add5_button"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="30dp"
+        android:text="Team B Score: 0" />
+
+    <Button
+        android:id="@+id/reset_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/teamB_score_textview"
+        android:layout_marginTop="50dp"/>
+
+</RelativeLayout>
